@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://martifyapp:martifyapp@martifyapp.jn7rw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}

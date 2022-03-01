@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  font-family: "Mukta" serif;
+}
+
+.main-clr {
+  color: #eb9412;
+}
+
+.main-bg,
+hr {
+  background-color: #eb9412;
+}
+
+.special {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.puff {
+  color: rgb(235, 148, 18);
+}
+
+/* HEADER STARTS*/
+.image1 {
+  background-image: url(components/assets/images/bread_1.png);
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.image2 {
+  background-image: url(components/assets/images/bigbread.png);
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.image3 {
+  background-image: url(components/assets/images/coilbread.png);
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+/* HEADER ENDS */
