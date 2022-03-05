@@ -24,7 +24,7 @@ const navigation = {
   social: [
     {
       name: "Instagram",
-      href: "https://www.instagram.com/femi_obadimu_/",
+      href: "https://www.twitter.com/@ficazzoS",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -193,7 +193,13 @@ const Footer = () => {
       <hr />
       <div className="text-center py-4">
         <p className="text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium py-2">
-          All Right Reserved | 2022 Femi Obadimu
+          All Right Reserved | {date} <a
+                      href="http://twitter.com/@ficazzoS"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Femi Obadimu
+                    </a>
         </p>
       </div>
     </div>
