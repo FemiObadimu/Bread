@@ -29,11 +29,7 @@ const CheckOut = () => {
 
   const [data, setData] = useState({
     email: "",
-    name: "",
-    cardNumber: "",
-    cvc: "",
     address: "",
-    expdate: "",
     company: "",
     city: "",
     state: "",
@@ -42,11 +38,7 @@ const CheckOut = () => {
 
   const {
     email,
-    name,
-    cardNumber,
-    cvc,
     address,
-    expdate,
     company,
     city,
     state,
@@ -380,100 +372,7 @@ const CheckOut = () => {
                       </div>
                     </div>
                   </section>
-                  <section aria-labelledby="payment-heading" className="mt-10">
-                    <h2
-                      id="payment-heading"
-                      className="text-lg font-medium text-gray-900"
-                    >
-                      Payment details
-                    </h2>
-
-                    <div className="mt-6 grid grid-cols-3 sm:grid-cols-4 gap-y-6 gap-x-4">
-                      <div className="col-span-3 sm:col-span-4">
-                        <label
-                          htmlFor="name-on-card"
-                          className="block text-sm font-medium text-gray-700"
-                        >
-                          Name on card
-                        </label>
-                        <div className="mt-1">
-                          <input
-                            type="text"
-                            id="name-on-card"
-                            name="name"
-                            value={name}
-                            onChange={onChange}
-                            required
-                            autoComplete="off"
-                            className="col-span-6 p-3  shadow-sm block w-full main-clr sm:text-sm border border-gray-300 rounded-md"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="col-span-3 sm:col-span-4">
-                        <label
-                          htmlFor="card-number"
-                          className="block text-sm font-medium text-gray-700"
-                        >
-                          Card number
-                        </label>
-                        <div className="mt-1">
-                          <input
-                            type="number"
-                            id="card-number"
-                            name="cardNumber"
-                            required
-                            value={cardNumber}
-                            onChange={onChange}
-                            autoComplete="off"
-                            className="col-span-6 p-3  shadow-sm block w-full main-clr sm:text-sm border border-gray-300 rounded-md"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="col-span-2 sm:col-span-3">
-                        <label
-                          htmlFor="expiration-date"
-                          className="block text-sm font-medium text-gray-700"
-                        >
-                          Expiration date (MM/YY)
-                        </label>
-                        <div className="mt-1">
-                          <input
-                            type="number"
-                            value={expdate}
-                            name="expdate"
-                            onChange={onChange}
-                            required
-                            id="expiration-date"
-                            autoComplete="off"
-                            className="col-span-6 p-3  shadow-sm block w-full main-clr sm:text-sm border border-gray-300 rounded-md"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="cvc"
-                          className="block text-sm font-medium text-gray-700"
-                        >
-                          CVC
-                        </label>
-                        <div className="mt-1">
-                          <input
-                            value={cvc}
-                            type="number"
-                            name="cvc"
-                            required
-                            onChange={onChange}
-                            id="cvc"
-                            autoComplete="off"
-                            className="col-span-6 p-3  shadow-sm block w-full main-clr sm:text-sm border border-gray-300 rounded-md"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </section>
+                  
 
                   <section aria-labelledby="shipping-heading" className="mt-10">
                     <h2
@@ -639,11 +538,7 @@ const CheckOut = () => {
                             e.preventDefault();
 
                             if (
-                              name === "" ||
                               email === "" ||
-                              expdate === "" ||
-                              cardNumber === "" ||
-                              cvc === "" ||
                               address === "" ||
                               company === "" ||
                               city === "" ||
